@@ -828,3 +828,57 @@ form btn2{
         font-size: 14px;
     }
 }
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    color: #fff;
+  }
+
+  #contact-form h2 {
+    margin-bottom: 10px;
+    color: #ff004f;
+    text-align: center;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+
+  #contact-form input::placeholder,
+  #contact-form textarea::placeholder {
+    color: #aaa;
+  }
+
+  #contact-form button {
+    padding: 12px;
+    background: #ff004f;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #contact-form button:hover {
+    background: #e60045;
+  }
+
+  #form-message {
+    text-align: center;
+    color: #00ff7f;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  

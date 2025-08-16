@@ -14,20 +14,20 @@
   </head>
   <body>
 
+    <!-- Header -->
     <div id="header">
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" />
           <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
+            <li><a href="#header" id="home-link">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
           <i class="fas fa-bars" onclick="openmenu()"></i>
-          </nav>
+        </nav>
       </div>
       <div class="header-text">
         <p>Athlete & Visionary</p>
@@ -38,6 +38,55 @@
       </div>
     </div>
 
+    <!-- Home Extra Section (cachée par défaut) -->
+    <div id="home-extra" style="display:none;">
+      <div class="container">
+        <h2>The Legend Unfolds</h2>
+        <p>Step inside the untold stories of Michael Jordan — from record-breaking games to behind-the-scenes insights that shaped the greatest athlete of all time.</p>
+
+        <div class="home-extra-cards">
+          <div class="card">
+            <i class="fa-solid fa-basketball-ball fa-2x"></i>
+            <h3>Scoring Genius</h3>
+            <p>Jordan scored over 32,000 points in his NBA career, making him one of the top scorers in history.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-trophy fa-2x"></i>
+            <h3>Clutch Performer</h3>
+            <p>Won 6 NBA Finals MVPs, never losing in the Finals — his legacy of clutch moments is unmatched.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-lightbulb fa-2x"></i>
+            <h3>Beyond the Court</h3>
+            <p>Successful businessman, owner of Charlotte Hornets, philanthropist, and global icon inspiring generations.</p>
+          </div>
+        </div>
+
+        <!-- Encouragement Section -->
+        <div id="home-encouragement">
+          <h2>Be Inspired by MJ</h2>
+          <p>“I've failed over and over and over again in my life and that is why I succeed.”</p>
+          <p>Push yourself beyond limits, embrace challenges, and never give up. Just like MJ, greatness is built through perseverance and belief in yourself.</p>
+
+          <div class="encouragement-quotes">
+            <div class="quote">
+              <i class="fa-solid fa-star fa-2x"></i>
+              <p>“Some people want it to happen, some wish it would happen, others make it happen.”</p>
+            </div>
+            <div class="quote">
+              <i class="fa-solid fa-fire fa-2x"></i>
+              <p>“You must expect great things of yourself before you can do them.”</p>
+            </div>
+            <div class="quote">
+              <i class="fa-solid fa-rocket fa-2x"></i>
+              <p>“Limits, like fears, are often just an illusion.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
     <div id="about">
       <div class="container">
         <div class="row">
@@ -131,48 +180,7 @@
       </div>
     </div>
 
-    <div id="The-Legend-MJ">
-      <div class="container">
-        <h1 class="sub-title">What Makes MJ Great</h1>
-        <div class="Why-MJ-Is-The-GOAT">
-          <div>
-            <i class="fa-solid fa-earth-americas"></i>
-            <h2>Michael Jordan's Impact</h2>
-            <p>
-              "Michael Jordan is more than a basketball legend; he is a symbol
-              of relentless determination, unmatched skill, and leadership that
-              changed the game forever. From clutch moments on the court to
-              building a global empire, MJ's greatness inspires generations
-              worldwide"
-            </p>
-            <a href="#">Understand His Impact</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-basketball-ball"></i>
-            <h2>Athlete</h2>
-            <p>
-              “A true champion on the court, known for his relentless
-              dedication, extraordinary skills, and the drive to push beyond
-              every limit. His performance inspires athletes worldwide to pursue
-              excellence and never give up.”
-            </p>
-            <a href="#">Understand His Impact</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-lightbulb"></i>
-            <h2>Visionary</h2>
-            <p>
-              “Beyond his athletic achievements, he is a visionary leader who
-              has transformed the game and inspired generations. His innovative
-              approach and leadership continue to shape the future of sports and
-              business alike.”
-            </p>
-            <a href="#">Understand His Impact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-----------portfolio--------- -->
+    <!-- Portfolio Section -->
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">Career Highlights</h1>
@@ -205,84 +213,151 @@
         <a href="#" class="btn">see more</a>
       </div>
     </div>
-  <!-- ------contact-------- --->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">More Pictures</h1>
-        <p class="see-pngall">see-PNGALL</p>
-        <div class="social-icons">
-          <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">More Pictures</h1>
+            <p class="see-pngall">see-PNGALL</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
         </div>
-        <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
       </div>
-      <div class="contact-right">
-        <form>
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="Your Email" required>
-          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
+      <div class="copyright">
+        <p>copyright © vianey. <i class="fas fa-heart"></i>Made on th 14/08/2025</p>
       </div>
     </div>
-  </div>
-  <div class="copyright">
-    <p>copyright © vianey. <i class="fas fa-heart"></i>Made on th 14/08/2025</p>
-  </div>
-</div>
-<script>
-function opentab(tabname) {
 
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-contents");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active-tab");
-    }
+    <!-- Scripts -->
+    <script>
+      // Tabs
+      function opentab(tabname) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tab-contents");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].classList.remove("active-tab");
+          }
+          tablinks = document.getElementsByClassName("tab-links");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].classList.remove("active-link");
+          }
+          document.getElementById(tabname).classList.add("active-tab");
+          event.currentTarget.classList.add("active-link");
+      }
 
-    tablinks = document.getElementsByClassName("tab-links");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active-link");
-    }
+      // Side menu
+      var sidemenu = document.getElementById("sidemenu")
+      function openmenu(){ sidemenu.style.right = "0"; }
+      function closemenu(){ sidemenu.style.right = "-200px"; }
 
-    document.getElementById(tabname).classList.add("active-tab");
+      // Home Extra toggle
+      const homeLink = document.getElementById('home-link');
+      const homeExtra = document.getElementById('home-extra');
 
-    event.currentTarget.classList.add("active-link");
-}
+      homeLink.addEventListener('click', function(e){
+        e.preventDefault();
+        homeExtra.style.display = 'block';
+        homeExtra.scrollIntoView({behavior: 'smooth'});
+      });
+    </script>
 
-function opentab(tabname) {
+    <style>
+      /* Home Extra Section */
+      #home-extra {
+        background: #111;
+        color: #fff;
+        padding: 40px 0;
+        text-align: center;
+      }
 
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tab-contents");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active-tab");
-    }
+      #home-extra h2 {
+        color: #ff004f;
+        margin-bottom: 20px;
+      }
 
-    tablinks = document.getElementsByClassName("tab-links");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active-link");
-    }
+      .home-extra-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
 
-    document.getElementById(tabname).classList.add("active-tab");
+      .home-extra-cards .card {
+        background: #222;
+        padding: 20px;
+        border-radius: 15px;
+        width: 250px;
+        transition: transform 0.3s;
+      }
 
-    event.currentTarget.classList.add("active-link");
-}
-</script>
-<script>
+      .home-extra-cards .card:hover {
+        transform: translateY(-10px);
+      }
 
-  var sidemenu = document.getElementById("sidemenu")
+      .home-extra-cards i {
+        color: #ff004f;
+        margin-bottom: 10px;
+      }
 
-  function openmenu(){
-    sidemenu.style.right = "0";
-  }
-  function closemenu(){
-    sidemenu.style.right = "-200px"
-  }
+      /* Encouragement Section */
+      #home-encouragement {
+        margin-top: 40px;
+        padding: 20px;
+        background: #1a1a1a;
+        border-radius: 15px;
+      }
 
-</script>
+      #home-encouragement h2 {
+        color: #00ff7f;
+        margin-bottom: 15px;
+      }
 
-</body>
+      #home-encouragement p {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      .encouragement-quotes {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .encouragement-quotes .quote {
+        background: #222;
+        padding: 15px;
+        border-radius: 15px;
+        width: 220px;
+        transition: transform 0.3s;
+      }
+
+      .encouragement-quotes .quote:hover {
+        transform: translateY(-5px);
+      }
+
+      .encouragement-quotes i {
+        color: #ff004f;
+        margin-bottom: 10px;
+      }
+    </style>
+
+  </body>
 </html>
